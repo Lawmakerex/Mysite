@@ -6,6 +6,7 @@ from django.views.generic import ListView
 
 
 
+
 from .forms import ProfileForm
 from .models import UserProfile
 

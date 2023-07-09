@@ -10,12 +10,18 @@
     <link rel="stylesheet" href="{% static "app.css" %}">
     {% block css_files%}{% endblock %}
 </head>
-<body>
+<body style= "background-image: url('{%static 'blog/images/weights.jpg'%}');">
     <header id="main-navigation">
-        <h1><a href="{% url "starting-page"%}">Law's Blog</a></h1>
+        <a href="{% url "starting-page"%}">
+        <img src="{% static "blog/images/fit.png" %}" alt="Law author of Blog">
+        </a>
+
         <nav>
-            <a href="{% url "read-later"%}">Stored Posts</a>
-            <a href="{% url "post-page"%}">All Posts</a>
+            
+            <a href="https://app.tepez.co.il/c/647c0d01c4179d468a812fab/run/">הצהרת בריאות</a>&nbsp &nbsp
+            <a href="{% url "post-page"%}">אתגרים</a>&nbsp &nbsp
+            <a href="#membership">רכישת מנוי</a>&nbsp &nbsp
+            <a href="{% url "post-page"%}">להשארת פרטים</a>&nbsp &nbsp
         </nav>
         </header>
     {% block content %}

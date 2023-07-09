@@ -10,6 +10,13 @@ html {
 
 body {
   margin: 0;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-color: rgb(107, 107, 107);
+  background-blend-mode: multiply;
+  
 }
 
 h1,
@@ -25,25 +32,40 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #390281;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   padding: 0 10%;
-  position: sticky;
+  position: absolute;
+  background: rgb(161,29,29);
+  background: linear-gradient(172deg, rgba(161,29,29,1) 7%, rgba(196,186,186,1) 21%, rgba(153,44,44,1) 47%, rgba(8,0,0,1) 84%);
+  box-shadow: 0 5px 28px rgba(179, 62, 113, 0.449);
   top: 0;
   left: 0;
+  position: fixed;
+  z-index:1
+
+  
+}
+
+#main-navigation img {
+  width: 10rem;
+  height: 5rem;
+  object-fit: center;
+
+  position: relative;
+  left: -30px;
+
+  
 }
 
 #main-navigation a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  margin-left: 1rem;
+  
 }
-
 
 #main-navigation a:hover,
 #main-navigation a:active {
-  color: #cf79f1;
+  color: #d4a6e1;
 }
 
 #main-navigation h1 a:hover,

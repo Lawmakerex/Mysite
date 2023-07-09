@@ -6,9 +6,12 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView
 from django.views import View
 
+
 from .models import Post
 from .forms import CommentForm
-
+from .forms import InformationForm
+from .forms import DetailForm
+from django import forms
 
 
 # Create your views here.
@@ -111,6 +114,30 @@ class ReadLaterView(View):
         return HttpResponseRedirect("/")
 
 
-    
+
+    def information(request):
+        if request.method == 'POST':
+            form = InformaionForm(request.POST)
+            
+            if form.is_valid():
+             print(froms.cleaned_data)
+             return HttpResponseRedirect("/thank-you")
+        else:
+            forms = InformationForm()
+            
+        return render(request, "blog/index.html", {
+          "forms": form 
+        })
+  
      
 
+class DetailFormView(DetailView):
+    template_name = "blog/post-details.html"
+    model = Post
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["post_tags"] = self.object.tags.all(())
+        context["detail_form"] = DetailForm()
+        return context
+    

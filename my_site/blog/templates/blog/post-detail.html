@@ -82,5 +82,24 @@
     </form>
 </section>
 
+<div>
+    <section id="detail-form">
+        <form>
+         {% csrf_token %}
+         {% for form_field in detail_form%}
+            <div class="form-control {% if form_field.errors %}invalid{% endif %}">
+              {{form_field.label_tag}}
+              {{form_field}}
+              {{form_field.errors}}
+            </div>
+            {% endfor %}
+            <button>Submit</button>
+
+
+        </form>
+    </section>    
+
+
+</div>
 
 {% endblock%}
