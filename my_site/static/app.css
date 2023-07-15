@@ -6,6 +6,9 @@
 
 html {
   font-family: 'Open Sans', 'Lato', sans-serif;
+
+  scroll-behavior: smooth;
+  
 }
 
 body {
@@ -35,7 +38,7 @@ h3 {
   padding: 0 10%;
   position: absolute;
   background: rgb(161,29,29);
-  background: linear-gradient(172deg, rgba(161,29,29,1) 7%, rgba(196,186,186,1) 21%, rgba(153,44,44,1) 47%, rgba(8,0,0,1) 84%);
+  background: linear-gradient(177deg, rgba(161, 29, 29, 0.747) 7%, rgba(196, 186, 186, 0.74) 21%, rgba(153, 44, 44, 0.651) 47%, rgba(18, 0, 0, 0.349) 84%);
   box-shadow: 0 5px 28px rgba(179, 62, 113, 0.449);
   top: 0;
   left: 0;
@@ -49,7 +52,7 @@ h3 {
   width: 10rem;
   height: 5rem;
   object-fit: center;
-
+  filter: brightness(800%);
   position: relative;
   left: -30px;
 

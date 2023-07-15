@@ -1,6 +1,10 @@
 body {
-  background-color: #e7e7e7;
+  background-color: #7c7a7a;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 #main-navigation {
   background-color: #390281;
@@ -13,7 +17,7 @@ body {
   width: 90%;
   max-width: 90rem;
   border-radius: 16px;
-  background-color: #5706c0;
+  background-color: #68180acc;
   position: relative;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   height: 22rem;
@@ -80,7 +84,7 @@ main {
   width: 90%;
   max-width: 90rem;
   margin: 3rem auto;
-  background-color: white;
+  background-color: rgba(209, 209, 209, 0.678);
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);

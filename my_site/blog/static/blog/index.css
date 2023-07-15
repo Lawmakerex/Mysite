@@ -1,52 +1,121 @@
 #welcome {
   background-repeat: no-repeat;
   background-position: top;
-  background-attachment: fixed;
-  background-size: 100% 60%;
-  background-color: rgb(106, 106, 106);
-  background-blend-mode: multiply;
-  padding: 6rem 12%;
-  }
   
+  background-size: 100% 100%;
+  background-color: rgb(255, 255, 255);
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 60rem;
+  margin: 1rem auto auto;
+  }
+
+
+
   #welcome header {
     display: flex;
     align-items: flex-start;
-    margin: 2rem auto;
+    margin: 1rem auto;
   }
   
-
-  
-  #welcome h1 {
-    font-size: 2.5rem;
-    margin: auto;
-    padding-bottom: 5%;
-    color: #e7e9e8;
-    text-shadow: 0 0 10px #000000;
-    width: 35%;
-    
-  }
-
-  #welcome h2 {
-    font-size: 5rem;
+  #welcome p {
+    font-size: 3rem;
     margin: auto;
     color: #f3f3f3;
     text-shadow: 0 0 5px #FF0000;
-    width: 40%;
+    position: absolute;
+    left:53%;
+    top: 60%;
   
   }
+
+  #Whatwedo {
+    text-align: center;
+    padding: 1rem;
+    background: rgb(96, 13, 13);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
+    padding-bottom: 5rem;
+   
+  }
   
-  #gallery {
-    background-color: rgb(255, 255, 255, 40%);
+  /* Style div elements that have class equal to name */
+  #Whatwedo .name {
+    font-size: 24px;
+    font-weight: 600;
+    color:rgb(75, 132, 255);
+    margin-top: 16px;
+  }
+  
+  /* Style p element */
+  #Whatwedo p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 150%;
+  }
+  
+
+  
+  #Whatwedo .card__details {
+    /* Add space around the details */
+    padding: 16px 8px 8px 8px;
+  }
+  
+#Whatwedo img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 12px;
+  height: 100px;
+}
+#Whatwedo #container {
+  max-width: 100%;
+  
+  /* Center the container in middle on horizontal axis */
+  margin: 0 auto;
+
+  /* Add empty space above the container (20% of the view height) */
+  
+}
+#Whatwedo .card {
+  /* Change background color */
+  
+  background: rgb(2,0,36);
+  background: linear-gradient(140deg, rgba(2,0,36,1) 9%, rgba(57, 58, 73, 0.747) 35%, rgba(3,1,0,1) 69%, rgb(71, 71, 70) 100%);
+  /* Add border */
+  border: 1px solid #502929;
+
+  /* Add space between the border and the content */
+  padding: 8px;
+
+  border-radius: 1px;
+}
+  
+#gallery {
+  background: rgb(71,2,2);
+background: linear-gradient(153deg, rgba(71,2,2,0.9724264705882353) 18%, rgba(0,0,0,0.9556197478991597) 41%, rgba(0,0,0,1) 65%, rgba(51,2,2,0.9556197478991597) 82%, rgba(0,0,0,0.9023984593837535) 100%);
+  padding: 2rem;
+    
+  
+  height: 60%;
+   
+}
+  #gallery-container {
+    background-color: rgba(53, 38, 38, 0.4);
     padding: 2rem;
     border-radius: 5px;
-    width: 80rem;
-    height: 50rem;
-    margin: -6rem auto 9rem auto;
+    width: 70rem;
+    height: 60%;
+    margin: 1rem auto 3rem auto;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
   }
   
+  
   #gallery h2 {
     text-align: center;
+
+  }
+  #gallery button {
+    position: relative;
+    margin: auto;
   }
 
   #gallery img {
@@ -87,22 +156,19 @@
     flex: 1;
   }
 
-
-
-
-
   #latest-posts {
-    background-color: rgb(255, 255, 255,40%);
+    background: rgb(96, 13, 13);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 20%, rgba(77, 20, 20, 0.849) 90%, rgba(20, 10, 10, 0.945) 99%);
     padding: 2rem;
-    border-radius: 5px;
-    width: 80rem;
-    height: 60rem;
-    margin: -6rem auto 2rem auto;
+    height: 40rem;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
   }
   
   #latest-posts h2 {
     text-align: center;
+    color: whitesmoke;
+    font-size: 2rem;
+  
   }
  
   
@@ -165,12 +231,18 @@
   }
   
   #info {
-    background-color: rgba(255, 255, 255, 0.712);
+    background-repeat: no-repeat;
+    background-position: top;
+    
+    background-size: 100% 100%;
+    background-color: rgb(80, 80, 80);
+    background-blend-mode: multiply;
+    
     padding: 2rem;
     border-radius: 5px;
     width: 100%;
-    height: 60rem;
-    margin: 1rem auto 3rem auto;
+    height: 40rem;
+    margin:  auto  auto;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
   }
   
@@ -186,9 +258,9 @@
   #membership {
     text-align: center;
     padding: 3rem;
-    background: rgb(96, 13, 13);
-    background: linear-gradient(180deg, rgb(120, 10, 10) 7%, rgba(31,4,4,1) 73%, rgba(77, 36, 36, 0.796) 86%);
-    margin-top: 3rem;
+    background: rgb(59, 7, 7);
+    background: linear-gradient(180deg, rgb(78, 5, 5) 7%, rgba(31,4,4,1) 73%, rgba(77, 36, 36, 0.796) 86%);
+    
   }
   
   #membership h2 {
@@ -239,6 +311,8 @@
   right:5%;
 }
 
+
+
 .button-64 span {
   background-color: rgb(5, 6, 45);
   padding: 16px 24px;
@@ -264,6 +338,7 @@
   transition: 0.3s;
   display: inline-block;
   width: 15%;
+  border: 2px solid #1d0404;
   border-radius: 5px;
   background-color: #393434;
   position: relative;
@@ -271,9 +346,10 @@
   top:-0rem;
   
   background: rgb(2,0,36);
-  background: linear-gradient(140deg, rgba(2,0,36,1) 9%, rgba(125,88,18,1) 35%, rgba(3,1,0,1) 69%, rgba(97,68,14,1) 100%);
+  background: linear-gradient(140deg, rgba(2,0,36,1) 9%, rgba(125,88,18,1) 35%, rgba(3,1,0,1) 69%, rgb(212, 205, 192) 100%);
 
 }
+
 .card h4 {
   text-align: center;
   color: rgb(255, 255, 255);
@@ -307,8 +383,12 @@
 
 }
 
-.card:hover {
+#membership .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+
 }
 
 img {

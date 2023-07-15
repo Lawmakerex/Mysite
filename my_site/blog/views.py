@@ -25,7 +25,13 @@ class StartingPageView(ListView):
         queryset =  super().get_queryset()
         data = queryset[:3]
         return data
-    
+
+def GalleryPageView(request):
+    return render(request, "blog/gallery.html")
+
+
+   
+
 class AllPostsView(ListView):
     template_name = "blog/all-posts.html"
     model = Post

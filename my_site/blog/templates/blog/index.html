@@ -14,20 +14,142 @@ Fitness Or-Yehuda
 
 {% block content%}
 
-    <section id="welcome" style= "background-image: url('{%static 'blog/images/Fitness.png'%}');">
-        
-        <header>
-            
-            <h2>פיטנס אור יהודה</h2>
-           
-        </header>
-        <p><h1>להתאמן במכון להרגיש בבית</h1></p>
+    <section id="welcome" style= "background-image: url('{%static 'blog/images/deadlifting2.jpg'%}');">
+        <div id="overlay overlay_2 ">
+       
+            <h2 style = "font-size: 10rem;
+                color: #e7e9e8;
+                position: absolute;
+                left:60%;
+                top: 20%;
+                text-shadow: 0 0 10px #FF0000;
+                ">פיטנס
+            </h2>
 
+
+            <h2 style = "font-size: 4.5rem;
+                color: #e7e9e8;
+                position: absolute;
+                left:66%;
+                top: 45%;
+                
+                ">אור יהודה
+            </h2>
+        
+        <p>להתאמן במכון להרגיש בבית</p>
+        </div>
+    </section>
+
+    <section id="Whatwedo">
+        <div id="container">
+            <h4 style="color: orange; margin-bottom:0rem;"> Why choose us?</h4>
+            <h1 style="color: white; font-size:2rem; margin:auto;"> PUSH YOUR LIMITS FORWARD</h1>
+            <h3 style="color: white;"> We offer a great deal of services to make your training experience pleasant</h3>
+
+            <!-- A div with card class for the card  -->
+            <div class="card">
+              <img src="https://www.workoutforless.co.uk/cdn/shop/articles/luis-reyes-mTorQ9gFfOg-unsplash_2_640x.jpg?v=1657122621" alt="Lago di Braies">
+        
+              <!-- A div with card__details class to hold the details in the card  -->
+              <div class="card__details">
+        
+        
+        
+                <!-- A div with name class for the name of the card -->
+                <div class="name">Modern Equipments</div>
+        
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
+                  pharetra
+                  vitae ipsum odio.</p>
+        
+               
+              </div>
+        
+        
+            </div>
+
+            <div class="card">
+                <img src="https://images.squarespace-cdn.com/content/v1/56b90cb101dbae64ff707585/1471742217208-4DDIFIXP2RJRTX8Y9Q6X/image-asset.jpeg?format=1000w" alt="Lago di Braies">
+          
+                <!-- A div with card__details class to hold the details in the card  -->
+                <div class="card__details">
+          
+                  <!-- Span with tag class for the tag -->
+                 
+          
+                  <!-- A div with name class for the name of the card -->
+                  <div class="name">Training plan</div>
+          
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
+                    pharetra
+                    vitae ipsum odio.</p>
+          
+                  
+                </div>
+          
+          
+              </div>
+              <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0AJB1B2LR__UMxUNejmqybLAt1SdX_eZFrQ&usqp=CAU" alt="Lago di Braies">
+          
+                <!-- A div with card__details class to hold the details in the card  -->
+                <div class="card__details">
+          
+                  <!-- Span with tag class for the tag -->
+                 
+          
+                  <!-- A div with name class for the name of the card -->
+                  <div class="name">Personal Trainer</div>
+          
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
+                    pharetra
+                    vitae ipsum odio.</p>
+          
+                  
+                </div>
+          
+          
+              </div>
+              <div class="card">
+                <img src="https://img.freepik.com/premium-photo/slices-homemade-jerk-chicken-fillets-marinated-jerk-seasoning-ai-generated_705708-16705.jpg" alt="Lago di Braies">
+          
+                <!-- A div with card__details class to hold the details in the card  -->
+                <div class="card__details">
+          
+                  <!-- Span with tag class for the tag -->
+                 
+          
+                  <!-- A div with name class for the name of the card -->
+                  <div class="name">Meal Plan</div>
+          
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
+                    pharetra
+                    vitae ipsum odio.</p>
+          
+                  
+                </div>
+          
+          
+              </div>
+          </div>
     </section>
 
 
+
+   <section id="latest-posts">
+        <h2> אתגרים </h2>
+        <ul>
+            {% for post in posts %}
+                {% include "blog/includes/post.html"%}
+            {% endfor %}
+            
+        </ul>
+    </section>
+
     <section id="gallery">
-        <h2> Our Gallery</h2>
+        <div id="gallery-container">
+        <h2 style= "color: white;"> Our Gallery</h2>
+        <a href="{% url "gallery-page"%}"><button class="button-64" role="button"><span class="text"> Gallery </span></button><br></a>
         <ul>
             <img src="{% static "blog/images/gym.jpeg" %}" alt="Law author of Blog">
             <img src="{% static "blog/images/rrr.jpg" %}" alt="Law author of Blog 2">
@@ -38,22 +160,15 @@ Fitness Or-Yehuda
             <source src="{% static "blog/images/gym.mp4" %}" type="video/mp4">
             
             Your browser does not support the video tag.
-          </video> 
+        </video> 
+        </div>
     </section>
 
 
-    <section id="latest-posts">
-        <h2> אתגרים </h2>
-        <ul>
-            {% for post in posts %}
-                {% include "blog/includes/post.html"%}
-            {% endfor %}
-            
-        </ul>
-    </section>
+ 
 
 
-    <section id="info">
+    <section id="info" style= "background-image: url('{%static 'blog/images/gym.jpeg'%}'); color: white;"> 
         <h2> השארת פרטים </h2>
         <form>
             <h1>
@@ -89,14 +204,9 @@ Fitness Or-Yehuda
     </section>
 
     <section id="membership">
-        <div id="membership-buttons">
-           <a href="https://m.fizikal.co.il/website/JoinNow.aspx?COBR=9eZkUNe25QhzEZdE1g6iILmN1gF5KE66vTPzFiwGk5w=&byContractTypeId=32#/join_now"><button class="button-64" role="button"><span class="text">שנה פרימיום</span></button><br></a>
-            <button class="button-64" role="button"><span class="text">שנה עם התחייבות</span></button><br>
-            <button class="button-64" role="button"><span class="text">שנה ללא התחייבות</span></button><br>
-            <button class="button-64" role="button"><span class="text">מנוי לשבוע</span></button><br>
-            <button class="button-64" role="button"><span class="text">כרטיסיה 10 כניסות</span></button><br>
-        </div>
-
+        
+        <h2 style= "color: white;  margin-top: -30px; ">מהיום ניתן לרכוש/לחדש מנוי מהבית  </h2>
+        <h1 style= "color: white;">פשוט בוחרים את המנוי שרוצים ובפחות מ5 דקות יש לכם מנוי חדש</h1>
         
         <div class="card" style="background: rgb(2,0,36);background: linear-gradient(140deg, rgba(2,0,36,1) 9%, rgba(125,88,18,1) 35%, rgba(3,1,0,1) 69%, rgba(97,68,14,1) 100%);" >
           
@@ -110,7 +220,7 @@ Fitness Or-Yehuda
               <br>
               <h4><b>התחייבות לשנה
             </b></h4> 
-            <button class="button-64" role="button"><span class="text"> רכישת מנוי </span></button><br>
+            <a href="https://m.fizikal.co.il/website/JoinNow.aspx?COBR=9eZkUNe25QhzEZdE1g6iILmN1gF5KE66vTPzFiwGk5w=&byContractTypeId=31#/join_now"><button class="button-64" role="button"><span class="text"> רכישת מנוי </span></button></a><br>
 
             </div>
         </div>
@@ -126,7 +236,7 @@ Fitness Or-Yehuda
               <hr>
               <br>
               <h4><b>מפסיקים מתי שרוצים</b></h4> 
-              <button class="button-64" role="button"><span class="text"> רכישת מנוי </span></button><br>
+              <a href="https://m.fizikal.co.il/website/JoinNow.aspx?COBR=9eZkUNe25QhzEZdE1g6iILmN1gF5KE66vTPzFiwGk5w=&byContractTypeId=30#/join_now"><button class="button-64" role="button"><span class="text"> רכישת מנוי </span></button></a><br>
 
             </div>
         </div>
@@ -142,10 +252,11 @@ Fitness Or-Yehuda
               <hr>
               <br>
               <h4><b>לתוצאות מירביות </b></h4>
-              <button class="button-64" role="button"><span class="text"> רכישת מנוי </span></button><br>
+              <a href="https://m.fizikal.co.il/website/JoinNow.aspx?COBR=9eZkUNe25QhzEZdE1g6iILmN1gF5KE66vTPzFiwGk5w=&byContractTypeId=32#/join_now"><button class="button-64" role="button"><span class="text"> רכישת מנוי </span></button></a><br>
 
             </div>
-        </div><div class="card" style="background: rgb(66,66,62);
+        </div>
+        <div class="card" style="background: rgb(66,66,62);
         background: linear-gradient(140deg, rgba(66,66,62,1) 5%, rgba(249,244,218,1) 25%, rgba(255,205,0,1) 32%, rgba(158,127,39,1) 54%, rgba(255,241,199,1) 94%);" >
           
             <div class="container">
@@ -157,10 +268,11 @@ Fitness Or-Yehuda
               <hr>
               <br>
               <h4 style="color: brown;"><b>מנוי לחודש בודד</b></h4> 
-              <button class="button-64" role="button"><span class="text"> רכישת מנוי </span></button><br>
+              <a href="https://m.fizikal.co.il/website/JoinNow.aspx?COBR=9eZkUNe25QhzEZdE1g6iILmN1gF5KE66vTPzFiwGk5w=&byContractTypeId=34#/join_now"><button class="button-64" role="button"><span class="text"> רכישת מנוי </span></button></a><br>
 
             </div>
-        </div><div class="card" style="background: rgb(66,66,62);
+        </div>
+        <div class="card" style="background: rgb(66,66,62);
         background: linear-gradient(112deg, rgba(66,66,62,1) 5%, rgba(164,72,9,1) 54%, rgba(237,207,161,1) 80%, rgba(80,47,26,1) 94%);" >
           
             <div class="container">
@@ -172,27 +284,36 @@ Fitness Or-Yehuda
               <hr>
               <br>
               <h4><b>מנוי לשבוע בודד</b></h4> 
-              <button class="button-64" role="button"><span class="text"> רכישת מנוי </span></button><br>
+              <a href="https://m.fizikal.co.il/website/JoinNow.aspx?COBR=9eZkUNe25QhzEZdE1g6iILmN1gF5KE66vTPzFiwGk5w=&byContractTypeId=33#/join_now"><button class="button-64" role="button"><span class="text"> רכישת מנוי </span></button></a><br>
 
             </div>
+            
+        </div>
+        <div class="card" style="background: rgb(201,156,200);
+                background: linear-gradient(180deg, rgba(201,156,200,1) 24%, rgba(110,107,109,1) 100%);" >
+          
+            <div class="container">
+              <h4><b>Dynamic</b></h4> 
+              <h3>ש"ח לחודש</h3>
+              <h1>299</h1>
+             
+
+              <hr>
+              <br>
+              <h4><b>מנוי חודש בודד</b></h4> 
+              <a href="https://m.fizikal.co.il/website/JoinNow.aspx?COBR=9eZkUNe25QhzEZdE1g6iILmN1gF5KE66vTPzFiwGk5w=&byContractTypeId=29#/join_now"><button class="button-64" role="button"><span class="text">רכישת מנוי</span></button></a><br>
+
+            </div>
+            
         </div>
 
-        
-        
-      
-
-
-        
-     
-
-
     </section>
+
     <section id="about">
 
         <iframe  src="https://goo.gl/maps/7FDZVjPdf2wriaLr5 " width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div id= "about-info"> 
             <h2> קצת עלינו</h2>
-    
             <p>
             יהדות קנדה 1 , אור יהודה
            03-7172685 
@@ -204,13 +325,12 @@ Fitness Or-Yehuda
            <br><br>
            מוצ"ש 20:00 - 23:00 (משתנה בהתאם ליציאת השבת)
            <br><br>
-
-           
          </p>
            
         </div>
         <a href="https://www.facebook.com/fitness.oryehuda" class="fa fa-facebook"></a>
         <a href="https://www.instagram.com/fitness.oryehuda2022/" class="fa fa-instagram"></a>
+        <a href="https://api.whatsapp.com/send?phone=972505550924" style="display: table; font-family: sans-serif; text-decoration: none; margin: 1em auto; color: #fff; font-size: 0.9em; padding: 1em 2em 1em 3.5em; border-radius: 2em; font-weight: bold; background: #25d366 url('https://tochat.be/click-to-chat-directory/css/whatsapp.svg') no-repeat 1.5em center; background-size: 1.6em;">WhatsApp</a>
     </section>
     {% endblock%}
 

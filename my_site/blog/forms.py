@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import Comment
+from .models import Comment, Detail
 
 
 class CommentForm(forms.ModelForm):
@@ -22,7 +22,7 @@ class InformationForm(forms.Form):
 
 class DetailForm(forms.ModelForm):
     class Meta:
-        model = Comment 
+        model = Detail 
         exclude = ["post"]
         labels = {
             "user_name": "שם",

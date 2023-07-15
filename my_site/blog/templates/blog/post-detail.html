@@ -46,8 +46,8 @@
             <address> By <a href="mailto:{{post.author.email_address}}">{{post.author|title}}</a></address>
             <div class="post__content">
                 Last updated on  <time>{{post.date|date:"D d M Y"}}</time>
-            </div>
-        
+                </div>
+            
     </article>
 </section>
 
@@ -70,7 +70,7 @@
     <h2> Your Comments</h2>
     <form action = "{% url 'post-detail-page' post.slug %}" method = "POST">
         {% csrf_token %}
-        {% for form_field in comment_form%}
+        {% for form_field in comment_form %}
             <div class="form-control {% if form_field.errors %}invalid{% endif %}">
                 {{form_field.label_tag}}
                 {{form_field}}
@@ -82,18 +82,15 @@
     </form>
 </section>
 
+
 <div>
     <section id="detail-form">
-        <form>
-         {% csrf_token %}
-         {% for form_field in detail_form%}
-            <div class="form-control {% if form_field.errors %}invalid{% endif %}">
-              {{form_field.label_tag}}
-              {{form_field}}
-              {{form_field.errors}}
-            </div>
-            {% endfor %}
-            <button>Submit</button>
+        <h2> Your Comments</h2>
+        <form >
+        
+         {{ comment_form }}
+         
+            <button>ssss</button>
 
 
         </form>
