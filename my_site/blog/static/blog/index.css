@@ -156,18 +156,64 @@ background: linear-gradient(153deg, rgba(71,2,2,0.9724264705882353) 18%, rgba(0,
     flex: 1;
   }
 
+  .buttonChall {
+    background-color: #af4c4c; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position:relative;
+    left:46%;
+ 
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .buttonChall1 {
+    background-color: rgba(26, 26, 26, 0.445); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #f14c00da;
+  }
+  
+  .buttonChall1:hover {
+    background-color: #ff0000be;
+    color: white;
+  }
+
   #latest-posts {
-    background: rgb(96, 13, 13);
-    background: linear-gradient(180deg, rgb(0, 0, 0) 20%, rgba(77, 20, 20, 0.849) 90%, rgba(20, 10, 10, 0.945) 99%);
+    background-repeat: no-repeat;
+    background-position: top;
+    
+    background-size: 100% 100%;
+    background-color: rgb(66, 66, 66);
+    background-blend-mode: multiply;
     padding: 2rem;
-    height: 40rem;
+    height:fit-content;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+    
   }
   
   #latest-posts h2 {
     text-align: center;
     color: whitesmoke;
     font-size: 2rem;
+  
+  }
+  #latest-posts h3 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2rem;
+    position:relative;
+  
+  }
+  #latest-posts h1 {
+    text-align: center;
+    color: orange;
+    font-size: 2rem;
+    position:relative;
   
   }
  

@@ -21,6 +21,9 @@ body {
   background-blend-mode: multiply;
   
 }
+a{
+  text-decoration: none;
+}
 
 h1,
 h2,
@@ -28,6 +31,7 @@ h3 {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
+
 
 #main-navigation {
   width: 100%;

@@ -2,34 +2,58 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    
+    text-align: right;
+    width: 100%;
+    height: fit-content;
+    position:relative;
+    overflow: hidden;
   }
   
+
   .post a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     transition: all 0.2s ease;
     padding: 1rem;
   }
+ 
+
+  .post #challname {
+    font-size: 24px; 
+    position: absolute; 
+    top: 8px;
+    right: 22px;
+  }
+
+  .post #desc {
+    font-size: 14px; 
+
+
+    
+    position: absolute; 
+    bottom: 30px;
+    right: 30px;
+  
+  }
+
   
   .post a:hover,
   .post a:active {
-    transform: scale(1.1);
-    background-color: #f5474749;
-    color: rgb(99, 232, 255);
+    transform: scale(1.05);
+    
+    color: rgb(101, 232, 255);
   }
   
+
   .post img {
-    width: 5rem;
-    height: 5rem;
-    object-fit: cover;
-    border-radius: 50%;
+    max-width: 100%;
+    height: 400px;
+    filter: brightness(50%);
+    border: 2px solid #1d0404;
+    overflow: hidden;
   }
   
-  .post h3 {
-    margin: 0.25rem 0;
-  }
+  
   
   .post time {
     color: #666666;
