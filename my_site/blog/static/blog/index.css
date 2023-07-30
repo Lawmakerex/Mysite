@@ -1,10 +1,9 @@
 #welcome {
   background-repeat: no-repeat;
   background-position: top;
-  
-  background-size: 100% 100%;
+  background-size: 100% 110%;
   background-color: rgb(255, 255, 255);
-  background-blend-mode: multiply;
+  background-blend-mode:multiply;
   width: 100%;
   height: 60rem;
   margin: 1rem auto auto;
@@ -18,14 +17,23 @@
     margin: 1rem auto;
   }
   
+  
+  #welcome #TitleContainer{
+    position: relative; 
+    right:30%; 
+    top:35%; 
+    width: 35%; 
+    height:40%; 
+    margin:auto;
+ 
+  }
   #welcome p {
     font-size: 3rem;
-    margin: auto;
     color: #f3f3f3;
     text-shadow: 0 0 5px #FF0000;
-    position: absolute;
-    left:53%;
-    top: 60%;
+    position: relative;
+    left:5%;
+    bottom: 30%;
   
   }
 
@@ -90,8 +98,8 @@
 }
   
 #gallery {
-  background: rgb(71,2,2);
-background: linear-gradient(153deg, rgba(71,2,2,0.9724264705882353) 18%, rgba(0,0,0,0.9556197478991597) 41%, rgba(0,0,0,1) 65%, rgba(51,2,2,0.9556197478991597) 82%, rgba(0,0,0,0.9023984593837535) 100%);
+  background: rgb(96, 13, 13);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
   padding: 2rem;
     
   
@@ -186,7 +194,7 @@ background: linear-gradient(153deg, rgba(71,2,2,0.9724264705882353) 18%, rgba(0,
   #latest-posts {
     background-repeat: no-repeat;
     background-position: top;
-    
+    background-attachment: fixed;
     background-size: 100% 100%;
     background-color: rgb(66, 66, 66);
     background-blend-mode: multiply;
@@ -239,8 +247,8 @@ background: linear-gradient(153deg, rgba(71,2,2,0.9724264705882353) 18%, rgba(0,
   #about {
     text-align: center;
     padding: 3rem;
-    background: rgb(74, 14, 14);
-    background: linear-gradient(360deg, rgb(114, 30, 30) 7%, rgba(31,4,4,1) 73%,rgba(77, 36, 36, 0.796) 86%);
+    background: rgb(96, 13, 13);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
    
   }
 
@@ -281,7 +289,7 @@ background: linear-gradient(153deg, rgba(71,2,2,0.9724264705882353) 18%, rgba(0,
     background-position: top;
     
     background-size: 100% 100%;
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(121, 121, 121);
     background-blend-mode: multiply;
     
     padding: 2rem;
@@ -304,8 +312,8 @@ background: linear-gradient(153deg, rgba(71,2,2,0.9724264705882353) 18%, rgba(0,
   #membership {
     text-align: center;
     padding: 3rem;
-    background: rgb(59, 7, 7);
-    background: linear-gradient(180deg, rgb(78, 5, 5) 7%, rgba(31,4,4,1) 73%, rgba(77, 36, 36, 0.796) 86%);
+    background: rgb(96, 13, 13);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
     
   }
   

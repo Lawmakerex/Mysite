@@ -1,0 +1,222 @@
+
+#expert {
+  background-color: rgb(24, 24, 24);
+   padding: 1rem 0rem;
+ 
+   
+}
+  #expert-container {
+    background-color: rgb(24, 24, 24);
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+  }
+  
+  
+  #expert h2 {
+    text-align: center;
+
+  }
+  
+  #expert ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  #expert li {
+    flex: 1;
+  }
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+  * {box-sizing: border-box;}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width:100%;
+  max-width:300px;
+  object-fit: fill;
+  position: relative;
+  border: 2px solid #9c9c9c;
+}
+
+.slideshow-container:hover .text {
+  opacity: 1;
+}
+
+/* Caption text */
+.slideshow-container .text {
+  color: #ffffff;
+  font-size: 30px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.685); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  padding: 18px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+
+
+
+.mySlides2 {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container2 {
+  width:100%;
+  max-width:300px;
+  object-fit: fill;
+  border: 2px solid #9c9c9c;
+  position: relative;
+  margin: 0% 3%;
+}
+
+.slideshow-container2:hover .text2 {
+  opacity: 1;
+}
+
+/* Caption text */
+.text2 {
+  color: #ffffff;
+  font-size: 30px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.685); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  padding: 18px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+.active2 {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade2 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+.mySlides3 {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container3 {
+  width:100%;
+  max-width:300px;
+  object-fit: fill;
+  position: relative;
+  border: 2px solid #9c9c9c;
+}
+
+.slideshow-container3:hover .text3 {
+  opacity: 1;
+}
+
+/* Caption text */
+.text3 {
+  color: #ffffff;
+  font-size: 30px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.685); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  padding: 18px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.active3 {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade3 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

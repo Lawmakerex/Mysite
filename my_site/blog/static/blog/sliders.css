@@ -1,17 +1,18 @@
 
 #expert {
-  background-color: rgb(24, 24, 24);
+  background: rgb(96, 13, 13);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
    padding: 1rem 0rem;
  
    
 }
   #expert-container {
-    background-color: rgb(24, 24, 24);
+    background-color: rgba(24, 24, 24, 0.664);
     padding: 1rem;
     border-radius: 5px;
     display: flex;
     justify-content: center;
-
+    width: 60rem;
     margin: auto;
   }
   

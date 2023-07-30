@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "app.css" %}">
+    
+    {% block css_files%}{% endblock %}
+</head>
+<body style= "background-image: url('{%static 'blog/images/rrr.jpg'%}');">
+    <header id="main-navigation">
+        <a href="{% url "starting-page"%}">
+        <img src="{% static "blog/images/fit.png" %}" alt="Law author of Blog">
+        </a>
+
+        <nav>
+            <a href="{% url "starting-page"%}">בית</a>&nbsp &nbsp
+            <a href="https://app.tepez.co.il/c/647c0d01c4179d468a812fab/run/">הצהרת בריאות</a>&nbsp &nbsp
+            <a href="{% url "post-page"%}">אתגרים</a>&nbsp &nbsp
+            <a href="{% url "starting-page"%}#membership">רכישת מנוי</a>&nbsp &nbsp
+            <a href="{% url "starting-page"%}#info">להשארת פרטים</a>&nbsp &nbsp
+            
+        </nav>
+        </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
