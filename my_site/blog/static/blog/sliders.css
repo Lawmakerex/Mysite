@@ -3,6 +3,7 @@
   background: rgb(96, 13, 13);
   background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
    padding: 1rem 0rem;
+   min-width: 100rem;
  
    
 }

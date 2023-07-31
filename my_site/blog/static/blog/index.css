@@ -4,7 +4,7 @@
   background-size: 100% 110%;
   background-color: rgb(255, 255, 255);
   background-blend-mode:multiply;
-  width: 100%;
+  min-width: 100rem;
   height: 60rem;
   margin: 1rem auto auto;
   }
@@ -37,12 +37,20 @@
   
   }
 
+
+
+/* --------------------------------------------------------------------------------- services ------------------------------------------------------------------- */
+
+
+
+
   #Whatwedo {
     text-align: center;
     padding: 1rem;
     background: rgb(96, 13, 13);
     background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
     padding-bottom: 5rem;
+     min-width: 100rem;
    
   }
   
@@ -97,12 +105,65 @@
   border-radius: 1px;
 }
   
+
+
+/* ---------------------------------------------------------------------------------Challenges Posts------------------------------------------------------------------- */
+#latest-posts {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-color: rgb(66, 66, 66);
+  background-blend-mode: multiply;
+  padding: 2rem;
+  height:fit-content;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+  min-width: 100rem;
+}
+
+#latest-posts h2 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 2rem;
+
+}
+#latest-posts h3 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 2rem;
+  position:relative;
+
+}
+#latest-posts h1 {
+  text-align: center;
+  color: orange;
+  font-size: 2rem;
+  position:relative;
+
+}
+
+
+#latest-posts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+#latest-posts li {
+  flex: 1;
+}
+
+
+/* ---------------------------------------------------------------------------------Gallery------------------------------------------------------------------- */
+
+
 #gallery {
   background: rgb(96, 13, 13);
   background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
   padding: 2rem;
-    
-  
+  min-width: 100rem;
   height: 60%;
    
 }
@@ -110,7 +171,7 @@
     background-color: rgba(53, 38, 38, 0.4);
     padding: 2rem;
     border-radius: 5px;
-    width: 70rem;
+    width: 70%;
     height: 60%;
     margin: 1rem auto 3rem auto;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
@@ -191,130 +252,48 @@
     color: white;
   }
 
-  #latest-posts {
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-color: rgb(66, 66, 66);
-    background-blend-mode: multiply;
-    padding: 2rem;
-    height:fit-content;
-    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+
+    /* ---------------------------------------------------------------------------------Leave Info------------------------------------------------------------------- */
+    #info {
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100% 100%;
+      background-color: rgb(121, 121, 121);
+      background-blend-mode: multiply;
+      padding: 2rem;
+      border-radius: 5px;
+      min-width: 100rem;
+      height: 40rem;
+      margin:  auto  auto;
+      box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+    }
     
-  }
+    #info h2 {
+      text-align: center;
+    }
   
-  #latest-posts h2 {
-    text-align: center;
-    color: whitesmoke;
-    font-size: 2rem;
+    #info form {
+      text-align: center;
+      font-size: 150%;
+    }
   
-  }
-  #latest-posts h3 {
-    text-align: center;
-    color: whitesmoke;
-    font-size: 2rem;
-    position:relative;
   
-  }
-  #latest-posts h1 {
-    text-align: center;
-    color: orange;
-    font-size: 2rem;
-    position:relative;
-  
-  }
- 
-  
-  #latest-posts ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  #latest-posts li {
-    flex: 1;
-  }
 
-  #about-info {
-    position: relative;
-    right: 30%;
-    overflow: hidden;
-  }
-  
-  #about {
-    text-align: center;
-    padding: 3rem;
-    background: rgb(96, 13, 13);
-    background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
-   
-  }
 
-  #about h2 {
-    font-size: 2rem;
-    color: #fff8f8;
-    left: -20%;
-    position: relative;
-  }
-  
-  #about p {
-    font-size: 2rem;
-    color: #fff8f8;
-    left: -20%;
-    position: relative;
-  }
 
-  #about iframe{
-
-    left: 60%;
-
-    top: -10%;
-
-    height:-30%;
-
-    width: 30%;
-
-    position:relative;
     
-    overflow: hidden;
-    float: left;
-  
 
-  }
-  
-  #info {
-    background-repeat: no-repeat;
-    background-position: top;
-    
-    background-size: 100% 100%;
-    background-color: rgb(121, 121, 121);
-    background-blend-mode: multiply;
-    
-    padding: 2rem;
-    border-radius: 5px;
-    width: 100%;
-    height: 40rem;
-    margin:  auto  auto;
-    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
-  }
-  
-  #info h2 {
-    text-align: center;
-  }
+/* --------------------------------------------------------------------------------- Membership ------------------------------------------------------------------- */
 
-  #info form {
-    text-align: center;
-    font-size: 150%;
-  }
+
+
 
   #membership {
     text-align: center;
     padding: 3rem;
     background: rgb(96, 13, 13);
     background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
-    
+    min-width: 100rem;
   }
   
   #membership h2 {
@@ -491,3 +470,52 @@ hr {
   background: #eb4e36;
   color: white;
 }
+
+  /* ---------------------------------------------------------------------------------About------------------------------------------------------------------- */
+
+  #about-info {
+    position: relative;
+    right: 30%;
+    overflow: hidden;
+  }
+  
+  #about {
+    text-align: center;
+    padding: 3rem;
+    background: rgb(96, 13, 13);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
+    min-width: 100rem;
+  }
+
+  #about h2 {
+    font-size: 2rem;
+    color: #fff8f8;
+    left: -20%;
+    position: relative;
+  }
+  
+  #about p {
+    font-size: 2rem;
+    color: #fff8f8;
+    left: -20%;
+    position: relative;
+  }
+
+  #about iframe{
+
+    left: 60%;
+
+    top: -10%;
+
+    height:-30%;
+
+    width: 30%;
+
+    position:relative;
+    
+    overflow: hidden;
+    float: left;
+  
+
+  }
+  
