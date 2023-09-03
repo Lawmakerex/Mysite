@@ -2,18 +2,15 @@
 #expert {
   background: rgb(96, 13, 13);
   background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
-   padding: 1rem 0rem;
-   min-width: 100rem;
+  padding:1rem;
  
    
 }
   #expert-container {
-    background-color: rgba(24, 24, 24, 0.664);
-    padding: 1rem;
-    border-radius: 5px;
+    background-color: rgb(24 24 24 / 41%);
     display: flex;
     justify-content: center;
-    width: 60rem;
+    width: 80%;
     margin: auto;
   }
   
@@ -33,6 +30,7 @@
   
   #expert li {
     flex: 1;
+    
   }
 
 
@@ -46,147 +44,37 @@
 
   * {box-sizing: border-box;}
 
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  width:100%;
-  max-width:300px;
-  object-fit: fill;
-  position: relative;
-  border: 2px solid #9c9c9c;
-}
-
-.slideshow-container:hover .text {
-  opacity: 1;
-}
-
-/* Caption text */
-.slideshow-container .text {
-  color: #ffffff;
-  font-size: 30px;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.685); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  padding: 18px 12px;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
-}
-
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-
-
-
-/* -------------------------------------------------------------------------------------------- */
-
-
-
-
-.mySlides2 {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container2 {
-  width:100%;
-  max-width:300px;
-  object-fit: fill;
-  border: 2px solid #9c9c9c;
-  position: relative;
-  margin: 0% 3%;
-}
-
-.slideshow-container2:hover .text2 {
-  opacity: 1;
-}
-
-/* Caption text */
-.text2 {
-  color: #ffffff;
-  font-size: 30px;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.685); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  padding: 18px 12px;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
-}
-.active2 {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade2 {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-
-
-/* -------------------------------------------------------------------------------------------- */
-
-
-
-
-
-
+.mySlides,
+.mySlides2,
 .mySlides3 {display: none;}
-img {vertical-align: middle;}
+#expert img {
+  vertical-align: middle; 
+  height: 400px;
+  max-width:100%;
+  width:400px;
+  object-fit: cover;
+}
 
 /* Slideshow container */
+.slideshow-container,
+.slideshow-container2,
 .slideshow-container3 {
-  width:100%;
+  margin:auto;
   max-width:300px;
   object-fit: fill;
   position: relative;
-  border: 2px solid #9c9c9c;
+  border: 1px solid #9c9c9c;
 }
 
-.slideshow-container3:hover .text3 {
+.slideshow-container:hover .text,
+.slideshow-container2:hover .text2,
+.slideshow-container3:hover .text3{
   opacity: 1;
 }
 
 /* Caption text */
+.text,
+.text2,
 .text3 {
   color: #ffffff;
   font-size: 30px;
@@ -203,11 +91,16 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
+
+.active,
+.active2,
 .active3 {
   background-color: #717171;
 }
 
 /* Fading animation */
+.fade,
+.fade2,
 .fade3 {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -218,7 +111,49 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+
+
+
+@media (max-width: 1400px) {
+
+}
+
+
+
+/* Caption text */
+@media (max-width: 800px) {
+
+  .text,
+  .text2,
+  .text3 {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+@media only screen and (max-width: 425px) {
+
+  #expert-container {
+   width:100%;
+   display:grid;
+   gap:3px;
+  }
+
+  
+  .text,
+  .text2,
+  .text3 {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .text,
+  .text2,
+  .text3 {
+    font-size: 11px;
+  }
+
 }

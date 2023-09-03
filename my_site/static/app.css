@@ -5,21 +5,19 @@
 }
 
 html {
+  height: 95vh;
   font-family: 'Open Sans', 'Lato', sans-serif;
-
+ 
   scroll-behavior: smooth;
+  overflow-x: hidden;
   
 }
 
 body {
   margin: 0;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  background-color: rgb(107, 107, 107);
-  background-blend-mode: multiply;
+  background-color: rgb(0, 0, 0);
   
+
 }
 a{
   text-decoration: none;
@@ -42,8 +40,8 @@ h3 {
   padding: 0 10%;
   position: absolute;
   background: rgb(161,29,29);
-  background: linear-gradient(177deg, rgba(161, 29, 29, 0.747) 7%, rgba(196, 186, 186, 0.74) 21%, rgba(153, 44, 44, 0.651) 47%, rgba(18, 0, 0, 0.349) 84%);
-  box-shadow: 0 5px 28px rgba(179, 62, 113, 0.449);
+  background: linear-gradient(177deg, rgb(61 7 7) 7%, rgb(142 135 135) 21%, rgb(94 35 35) 47%, rgb(18, 0, 0) 84%);
+  box-shadow: 0 5px 28px rgb(179, 62, 113);
   top: 0;
   left: 0;
   position: fixed;
@@ -67,7 +65,8 @@ h3 {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  
+  padding:6px;
+
 }
 
 #main-navigation a:hover,
@@ -79,3 +78,154 @@ h3 {
 #main-navigation h1 a:active {
   color: white;
 }
+
+.topnav .icon {
+  display: none;
+ 
+}
+
+
+
+@media (max-width:1400px){
+
+
+} 
+
+
+@media (max-width:800px){
+
+
+} 
+
+
+@media (max-width: 425px) {
+  body {
+    min-width: auto;
+    
+  }
+
+  #main-navigation img {
+    width: 6rem;
+    height: 4rem;
+    left: -10px;
+  }
+
+  
+  #navlinks {
+   font-size: 1rem;
+   color:#d4a6e1;
+   position: relative;
+   top: 30%;
+  }
+  
+    
+  #navlinkstext {
+  display:none;
+  }
+  
+  a.icon { position: relative;
+    bottom: 27px;
+    right:-33%;
+   
+    }
+
+  #main-navigation {
+    min-width: 5rem;
+    padding: 0 5%;
+    
+  }
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: -20%;
+    top: 10%;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  .topnav.responsive #navlinkstext {
+    display:grid;
+    position: relative;
+    top: 106px;
+    right: -9px;
+    background: rgb(20 15 15 / 96%);
+    border: 1px solid #2a2a2a;
+    }
+}
+
+@media (max-width: 320px) {
+  body {
+    min-width: auto;
+    
+  }
+
+  #main-navigation img {
+    width: 6rem;
+    height: 4rem;
+    left: -10px;
+  }
+
+  
+  #navlinks {
+   font-size: 1rem;
+   color:#d4a6e1;
+   position: relative;
+   top: 30%;
+  }
+  
+    
+  #navlinkstext {
+  display:none;
+  }
+  
+  a.icon { position: relative;
+    bottom: 27px;
+    right:-33%;
+   
+    }
+
+  #main-navigation {
+    min-width: 5rem;
+    padding: 0 5%;
+    
+  }
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: -20%;
+    top: 10%;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  .topnav.responsive #navlinkstext {
+    display:grid;
+    position: relative;
+    top: 106px;
+    right: -9px;
+    background: rgb(20 15 15 / 96%);
+    border: 1px solid #2a2a2a;
+    }
+
+}
+
+
+
