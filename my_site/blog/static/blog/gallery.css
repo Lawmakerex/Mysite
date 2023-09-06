@@ -194,7 +194,7 @@
   display: inline-block;
   font-size: 16px;
   position:relative;
-  left:45%;
+  left:46%;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -554,18 +554,6 @@ hr {
 @media (max-width: 1500px) {
   #welcome p {
     color: #eeff00;
-    left:120px;
-    
-  }
-   #fit_Title {
-   
-    left:270px;
-  }
-    
-  #fit_sub {
-   
-    left:400px;
-    
     
   }
     #welcome #TitleContainer{
@@ -611,26 +599,25 @@ hr {
   #welcome p {
     font-size: 2rem;
     color: #0af8a9;
-    left:120px;
+    left:60px;
     bottom: 6rem;
     width:100%;
   }
     
   #fit_Title {
     font-size: 7rem;
-    left:200px;
+    left:140px;
   }
     
   #fit_sub {
     font-size: 4rem;
-    left:223px;
+    left:160px;
     bottom: 4rem;
     
   }
    
   #welcome #TitleContainer{
-    left:10%;
-    top:35%;
+    left:20%;
     width: 45%; 
     padding:3px;
   }
@@ -644,7 +631,9 @@ hr {
   }
   
 
- 
+  #latest-posts h3{
+  left: -1%;
+  }
 
   #membership .card {
    width:35%;
@@ -666,28 +655,21 @@ hr {
 
   
   #latest-posts .post #challname {
-  font-size:30px;
-    right:23%;
+    font-size:30px;
+    right:17%;
   }
   
   #latest-posts .post #desc {
-  font-size:16px;
-  right:23%;
-    width:50%;
+    font-size:16px;
+    right:16%;
+    width:65%;
   }
     
   #latest-posts .buttonChall {
     margin-top:1rem;
-  
-    left:41%;
-    
+    left:40%;
   }
-
-  #latest-posts h3{
-  left: -2%;
-  }
-    
-    #gallery img {
+     #gallery img {
     width: 95%;
     height: 95%;
     border-radius:2px;
@@ -703,7 +685,12 @@ hr {
     padding: 1rem;
  
   }
-  
+
+  .buttonChall1 {
+    margin-top:1rem;
+    left:41%;
+  }
+    
   #gallery-container{
     width: 100%;
     padding: 0rem;
@@ -712,14 +699,36 @@ hr {
     display:grid;
      gap: 0rem;
   }
+    #about p {
+  font-size: 2rem;
+    
+ 
+
+}
   }
 
 
 
   @media (max-width: 800px) {
     #welcome p {
-      color: #eeff00;
+      color: #ff00ca;
+      left:230px;
     }
+      #welcome #TitleContainer{
+    left:20%;
+    width:100%
+  }
+      #fit_Title {
+    font-size: 7rem;
+    left:300px;
+  }
+    
+  #fit_sub {
+    font-size: 4rem;
+    left:330px;;
+    bottom: 4rem;
+    
+  }
   }
   
 
@@ -740,23 +749,25 @@ hr {
   #welcome #TitleContainer{
     right:0%; 
     top:35%; 
-    width: 100%; 
+    width: 90%; 
   }
   #fit_Title {
     font-size: 3rem;
-    left:33%;
+    left:50px;
+    bottom: 1rem;
   }
   #fit_sub {
-    left:39%;
+    left:50px;
+    font-size: 2rem;
     bottom: 2rem;
   
   }
   
   #welcome p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     bottom: 40%;
     color: #26ce05;
-    left:2rem;
+    left:2px;
   }
 
   #Whatwedo #container{
@@ -779,6 +790,7 @@ hr {
     width:100%;
     
   }
+  
   #latest-posts .post a {
   padding:0.2rem;
   }
@@ -823,8 +835,8 @@ hr {
      gap: 0rem;
   }
 
-  #gallery .buttonChall1 {
-  left:23%;
+  .buttonChall1 {
+  left:28%;
  }
 
   #info {
@@ -866,7 +878,7 @@ hr {
     color: #fff8f8;
   }
 
-  .card {
+  #membership .card {
     width:100%;
     
   }
@@ -931,19 +943,21 @@ hr {
   }
   #fit_Title {
     font-size: 3rem;
-    left:33%;
+    left:46px;
+    bottom: 1.2rem;
   }
   #fit_sub {
-    left:39%;
+    font-size: 2rem;
+    left:39px;
     bottom: 2rem;
   
   }
   
   #welcome p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     bottom: 40%;
-    color: #2400f3;
-    left:2rem;
+    color: #2600ff;
+    left:1px;
   }
 
   #Whatwedo #container{
@@ -1052,7 +1066,7 @@ hr {
     color: #fff8f8;
   }
 
-  .card {
+  #membership .card {
     width:100%;
     
   }
