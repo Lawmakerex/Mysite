@@ -6,7 +6,7 @@ Fitness Or-Yehuda
 {% endblock%}
 
 {% block css_files %}
-<link rel="stylesheet" href="{% static "blog/post.css" %}">
+
 <link rel="stylesheet" href="{% static "blog/gallery.css" %}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -14,79 +14,84 @@ Fitness Or-Yehuda
 
 {% block content%}
 
-    <section id="welcome" style= "background-image: url('{%static 'blog/images/Fitness.png'%}');">
-        
-        <header>
-            
-            <h2>פיטנס אור יהודה</h2>
-           
-        </header>
-        <p><h1>להתאמן במכון להרגיש בבית</h1></p>
-
-    </section>
-
-
-    <section id="gallery">
-        <h2> Gallery</h2>
-        <ul>
-            <img src="{% static "blog/images/gym.jpeg" %}" alt="Law author of Blog">
-            <img src="{% static "blog/images/rrr.jpg" %}" alt="Law author of Blog 2">
-            <img src="{% static "blog/images/boxing.jpg" %}" alt="Law author of Blog 3"> 
-   
-        </ul>
-        <ul>
-            <img src="{% static "blog/images/gym.jpeg" %}" alt="Law author of Blog">
-            <img src="{% static "blog/images/rrr.jpg" %}" alt="Law author of Blog 2">
-            <img src="{% static "blog/images/boxing.jpg" %}" alt="Law author of Blog 3"> 
-   
-        </ul>
-        <ul>
-            <img src="{% static "blog/images/gym.jpeg" %}" alt="Law author of Blog">
-            <img src="{% static "blog/images/rrr.jpg" %}" alt="Law author of Blog 2">
-            <img src="{% static "blog/images/boxing.jpg" %}" alt="Law author of Blog 3"> 
-   
-        </ul>
-      
-    
- 
-    </section>
-
     <div class="container">
-        <div class="image-container">
-          <div class="image"><img src="{% static "blog/images/gym.jpeg" %}" alt="" /></div>
-          <div class="image"><img src="{% static "blog/images/rrr.jpg" %}" alt="" /></div>
-          <div class="image"><img src="{% static "blog/images/rrr.jpg" %}" alt="" /></div>
-          <div class="image"><img src="{% static "blog/images/boxing.jpg" %}" alt="" /></div>
-          <div class="image"><img src="{% static "blog/images/gym.jpeg" %}" alt="" /></div>
-          <div class="image"><img src="{% static "blog/images/boxing.jpg" %}" alt="" /></div>
-          <div class="image"><img src="{% static "blog/images/rrr.jpg" %}" alt="" /></div>
-          <div class="image"><img src="{% static "blog/images/gym.jpeg" %}" alt="" /></div>
 
-        </div>
-  
-        <div class="popup-image">
-          <span>&times;</span>
-          <img src="" alt="" />
-        </div>
-      </div>
-  
-      <script>
-        document.querySelectorAll(".image img").forEach(image => {
-          image.onclick = () => {
-            document.querySelector(".popup-image").style.display = "block";
-            document.querySelector(".popup-image img").src =
-              image.getAttribute("src");
-          };
-        });
-  
-        document.querySelector(".popup-image span").onclick = () => {
-          document.querySelector(".popup-image").style.display = "none";
-        };
-      </script>
+        <section id="welcome" style= "background-image: url('{%static 'blog/images/Fitness.png'%}');">
+            
+            <header>
+                
+                <div id="gallerypagecontainer">
+                
+                    <h1>גלריה</h1>
+                
+                </div>
+                
+
+                
+            
+            </header>
         
-     
+
+        </section>
 
 
+        
+        <div class="container">
+            <div class="image-container">
+              <div class="image"><img src="{% static "blog/images/יסמין.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/ירוק.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/חברים.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/חמודי.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/יסמין.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/בום.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/מיכה.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/יסמין.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/גלגל (2).jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/יסמין.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/ירוק.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/חברים.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/חמודי.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/יסמין.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/בום.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/צחוק.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/יסמין.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/גלגל (2).jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/badass.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/ירוק.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/חברים.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/חמודי.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/יסמין.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/בום.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/מיכה.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/יסמין.jpeg" %}" alt="" /></div>
+              <div class="image"><img src="{% static "blog/images/גלגל (2).jpeg" %}" alt="" /></div>
+  
 
-    {% endblock%}
+            </div>
+      
+            <div class="popup-image">
+              <span>&times;</span>
+              <img src="" alt="" />
+            </div>
+          </div>
+      
+          <script>
+            document.querySelectorAll(".image img").forEach(image => {
+              image.onclick = () => {
+                document.querySelector(".popup-image").style.display = "block";
+                document.querySelector(".popup-image img").src =
+                  image.getAttribute("src");
+              };
+            });
+      
+            document.querySelector(".popup-image span").onclick = () => {
+              document.querySelector(".popup-image").style.display = "none";
+            };
+          </script>
+       
+        
+   
+
+
+{% endblock%}
 

@@ -12,7 +12,7 @@
   background-color: rgb(135 135 135);
   background-blend-mode:multiply;
   min-width: 100%;
-  height: 60rem;
+  height: 70rem;
   margin: 5rem auto auto;
   }
 
@@ -38,7 +38,7 @@
     font-size: 10rem;
     color: #e7e9e8;
     position: relative;
-    left:30%;
+    left:310px;
     bottom: 2rem;
     margin:auto;
     text-shadow: 0 0 10px #FF0000;
@@ -48,9 +48,9 @@
     font-size: 4rem;
     color: #e7e9e8;
     position: relative;
-    left:49%;
+    left:450px;
     margin:auto;
-    bottom: 4rem;
+    bottom: 4.6rem;
   
   }
 
@@ -59,7 +59,7 @@
     color: #f3f3f3;
     text-shadow: 0 0 5px #FF0000;
     position: relative;
-    left:7%;
+    left:170px;
     bottom: 30%;
   
   }
@@ -210,6 +210,7 @@
   color: white;
 }
 
+
 /* ---------------------------------------------------------------------------------Gallery------------------------------------------------------------------- */
 
 
@@ -344,7 +345,7 @@
   color: #FFFFFF;
   display: flex;
   font-family: Phantomsans, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   justify-content: center;
   line-height: 1em;
   max-width: 100%;
@@ -577,9 +578,14 @@ hr {
     #Whatwedo p {
     font-size: 0.9vw;
   }
+   #latest-posts .buttonChall {
   
-  .buttonChall {
-    left:43%;
+  
+    left:39vw;
+    
+  }
+  #expert .buttonChall {
+    left:43vw;
   }
   
 
@@ -640,11 +646,7 @@ hr {
   }
   #Whatwedo .card {
     width: 45%; 
-
   }
-  
-
- 
 
   #membership .card {
    width:35%;
@@ -661,7 +663,6 @@ hr {
   #latest-posts ul {
     display:grid;
     width:100%;
-    
   }
 
   
@@ -676,10 +677,9 @@ hr {
     width:50%;
   }
     
-  #latest-posts .buttonChall {
+  #latest-posts .buttonChall.buttonChall {
     margin-top:1rem;
-  
-    left:41%;
+    left:37vw;
     
   }
 
@@ -712,19 +712,60 @@ hr {
     display:grid;
      gap: 0rem;
   }
+
+    #expert .buttonChall {
+    left:37vw;
+  }
+    
   }
 
 
 
   @media (max-width: 800px) {
     #welcome p {
-      color: #eeff00;
+      color: #ecff00;
+      font-size:1.6rem;
     }
+    
+     #fit_Title {
+      font-size:5rem;
+      left:200px;
+  }
+    
+    #fit_sub {
+      font-size: 3rem;
+      left:210px;
+      bottom: 4rem;
+    
+  }
+   
+    #welcome #TitleContainer{
+      left:10%;
+      top:35%;
+      width: 45%; 
+      padding:3px;
+  }
+    #latest-posts .post #challname {
+      left:140px;
+      width: 70%
   }
   
+    #latest-posts .post #desc {
+      left:70px;
+      width:80%
+    }
 
-
-
+      #expert .buttonChall {
+    left:290px;
+  }
+    #latest-posts .buttonChall.buttonChall {
+    margin-top:1rem;
+    left:270px;
+    
+  }
+  
+  }
+  
 
 
 
@@ -744,11 +785,13 @@ hr {
   }
   #fit_Title {
     font-size: 3rem;
-    left:33%;
+    left:120px;
+    bottom: 0rem;
   }
   #fit_sub {
-    left:39%;
-    bottom: 2rem;
+    left:110px;
+    bottom: 1rem;
+    font-size: 2rem;
   
   }
   
@@ -786,15 +829,21 @@ hr {
   
   #latest-posts .post #challname {
   font-size:20px;
+    left:115px;
+    
   }
   
   #latest-posts .post #desc {
   font-size:15px;
     }
   
-  #latest-posts .buttonChall {
+  #latest-posts .buttonChall.buttonChall {
     margin-top:1rem;
-  left:26%;
+    left:130px;
+  }
+
+  #expert .buttonChall {
+    left:120px;
   }
   
   #gallery img {
@@ -824,7 +873,7 @@ hr {
   }
 
   #gallery .buttonChall1 {
-  left:23%;
+  left:3%;
  }
 
   #info {
@@ -851,8 +900,8 @@ hr {
 
 
   #membership {
-      text-align: center;
-      padding: 3rem;
+    text-align: center;
+    padding: 3rem;
     display:grid;
 
   }
@@ -866,8 +915,9 @@ hr {
     color: #fff8f8;
   }
 
-  .card {
+  #membership .card {
     width:100%;
+    
     
   }
 
@@ -931,19 +981,19 @@ hr {
   }
   #fit_Title {
     font-size: 3rem;
-    left:33%;
+    left:70px;
   }
   #fit_sub {
-    left:39%;
-    bottom: 2rem;
+    left:60px;
+    bottom: 1rem;
   
   }
   
   #welcome p {
     font-size: 1.4rem;
-    bottom: 40%;
+    bottom: 50px;
     color: #2400f3;
-    left:2rem;
+    left:10px;
   }
 
   #Whatwedo #container{
@@ -967,20 +1017,29 @@ hr {
     
   }
   #latest-posts .post a {
-  padding:0.2rem;
+    padding:0.2rem;
   }
 
   
   #latest-posts .post #challname {
-  font-size:20px;
+    font-size:20px;
+    left:50px;
+    width:80%;
   }
   
   #latest-posts .post #desc {
-  font-size:15px;
+    font-size:15px;
+    left:50px;
+    width:80%;
     }
-  .buttonChall {
+  #latest-posts .buttonChall.buttonChall {
     margin-top:1rem;
   left:26%;
+  }
+
+  #expert .buttonChall  {
+    margin-top:1rem;
+  left:70px;
   }
   
   #gallery img {
@@ -1009,8 +1068,8 @@ hr {
      gap: 0rem;
   }
 
-.buttonChall1 {
-  left:23%;
+  .buttonChall1 {
+    left:23%;
 }
 
   #info {

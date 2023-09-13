@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block title%}
+Fitness Or-Yehuda
+{% endblock%}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "blog/post.css" %}">
+<link rel="stylesheet" href="{% static "blog/index.css" %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{% endblock%}
+
+{% block content%}
+
+
+   
+
+
+   
+
+    <section id="info">
+        <h2> השארת פרטים </h2>
+        <form method="post">
+            {% csrf_token %}
+
+            {{form.as_p}}
+
+            <button>Submit</button>
+                
+            
+     
+        </form>
+        </ul>
+    </section>
+
+    {% endblock%}
+
