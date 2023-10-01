@@ -27,7 +27,7 @@
   
   #welcome #TitleContainer{
     position: relative; 
-    right:-30%; 
+    right:-25%; 
     top:25%; 
     width: 35%; 
     height:40%; 
@@ -148,6 +148,12 @@
   
 }
 
+#latest-posts  #latest-posts-container{
+  margin-bottom: 5rem;
+  position: relative;
+  
+}
+
 #latest-posts h2 {
   text-align: center;
   color: whitesmoke;
@@ -183,7 +189,7 @@
   flex: 1;
 }
 
-.buttonChall {
+#latest-posts .buttonChall {
   background-color: #af4c4c; /* Green */
   border: none;
   color: white;
@@ -193,19 +199,21 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  position:relative;
-  left:45%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition-duration: 0.4s;
   cursor: pointer;
 }
 
-.buttonChall1 {
+#latest-posts .buttonChall1 {
   background-color: rgba(26, 26, 26, 0.445); 
   color: rgb(255, 255, 255); 
   border: 2px solid #f14c00da;
 }
 
-.buttonChall1:hover {
+#latest-posts .buttonChall1:hover {
   background-color: #ff0000be;
   color: white;
 }
@@ -289,24 +297,112 @@
     background-blend-mode: multiply;
     padding: 2rem;
     border-radius: 5px;
-    
     height: 40rem;
     margin:  auto  auto;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
   }
-  
+  #info-container{
+    position: relative;
+    display:grid;
+    width:100%;
+ 
+    
+  }
   #info h2 {
     text-align: center;
+    font-size: 250%;
+   
   }
 
-  #info form {
+  #info h1 {
     text-align: center;
-    font-size: 150%;
+    
+    font-size: 200%;
+  }
+
+  
+
+  #info .buttonChall {
+    background-color: #af4c4c; /* Green */
+    border: none;
+    color: white;
+    margin-top:2rem;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  #info .buttonChall1 {
+    background-color: rgba(26, 26, 26, 0.445); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #f14c00da;
+  }
+  
+  #info .buttonChall1:hover {
+    background-color: #ff0000be;
+    color: white;
   }
   
   
 
+    /* ---------------------------------------------------------------------------------Leave Info------------------------------------------------------------------- */
+    #information {
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100% 100%;
+      background-color: rgb(48, 48, 48);
+      background-blend-mode: multiply;
+      padding: 2rem;
+      border-radius: 5px;
+      height: 60rem;
+      margin:  auto  auto;
+      box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+    }
+    #information-container {
+      display:grid;
+      width:100%;
+      height:100%;
+      text-align: center;
+      font-size: 100%;
+      
+    }
+    #information h2 {
+      text-align: center;
+      padding-top: 10px;
+      font-size: 350%;
+    }
 
+    #information label {
+      display:grid;
+      
+    }
+    #information input, textarea {
+   
+      text-align: center;
+      font-size: 130%;
+   
+    }
+ 
+
+    #information button{
+      font-size: 32px;
+      left:45%;
+    }
+
+    @media (max-width: 768px) {
+      #information input, textarea {
+        width: 90%;
+      }
+    }
+  
 
     
 
@@ -578,15 +674,8 @@ hr {
     #Whatwedo p {
     font-size: 0.9vw;
   }
-   #latest-posts .buttonChall {
-  
-  
-    left:39vw;
-    
-  }
-  #expert .buttonChall {
-    left:43vw;
-  }
+
+ 
   
 
   #latest-posts h3{
@@ -666,22 +755,8 @@ hr {
   }
 
   
-  #latest-posts .post #challname {
-  font-size:30px;
-    right:23%;
-  }
-  
-  #latest-posts .post #desc {
-  font-size:16px;
-  right:23%;
-    width:50%;
-  }
-    
-  #latest-posts .buttonChall.buttonChall {
-    margin-top:1rem;
-    left:37vw;
-    
-  }
+
+
 
   #latest-posts h3{
   left: -2%;
@@ -713,9 +788,7 @@ hr {
      gap: 0rem;
   }
 
-    #expert .buttonChall {
-    left:37vw;
-  }
+  
     
   }
 
@@ -745,24 +818,8 @@ hr {
       width: 45%; 
       padding:3px;
   }
-    #latest-posts .post #challname {
-      left:140px;
-      width: 70%
-  }
-  
-    #latest-posts .post #desc {
-      left:70px;
-      width:80%
-    }
+   
 
-      #expert .buttonChall {
-    left:290px;
-  }
-    #latest-posts .buttonChall.buttonChall {
-    margin-top:1rem;
-    left:270px;
-    
-  }
   
   }
   
@@ -829,7 +886,7 @@ hr {
   
   #latest-posts .post #challname {
   font-size:20px;
-    left:115px;
+   
     
   }
   
@@ -837,14 +894,17 @@ hr {
   font-size:15px;
     }
   
-  #latest-posts .buttonChall.buttonChall {
-    margin-top:1rem;
-    left:130px;
+
+  #expert {
+    margin-bottom: 5rem;
+   
+  }
+  #expert .buttonChall {
+    top: 101%;
+    transform: translate(-50%, -50%);
+   
   }
 
-  #expert .buttonChall {
-    left:120px;
-  }
   
   #gallery img {
     width: 95%;
@@ -1023,24 +1083,18 @@ hr {
   
   #latest-posts .post #challname {
     font-size:20px;
-    left:50px;
+   
     width:80%;
   }
   
   #latest-posts .post #desc {
     font-size:15px;
-    left:50px;
+ 
     width:80%;
     }
-  #latest-posts .buttonChall.buttonChall {
-    margin-top:1rem;
-  left:26%;
-  }
 
-  #expert .buttonChall  {
-    margin-top:1rem;
-  left:70px;
-  }
+
+
   
   #gallery img {
     width: 95%;

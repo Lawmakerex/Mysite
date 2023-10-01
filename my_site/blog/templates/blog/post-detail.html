@@ -50,8 +50,10 @@
             
     </article>
 </section>
+    <div id="postext">
+        {{post.content|linebreaks}}
 
-    {{post.content|linebreaks}}
+    </div>
 </main>
 
 <section id="comments">
@@ -76,27 +78,13 @@
                 {{form_field}}
                 {{form_field.errors}}
             </div>
-            {% endfor %}
+            {% endfor %} 
      
         <button>Save Comment</button>
     </form>
 </section>
 
 
-<div>
-    <section id="detail-form">
-        <h2> Your Comments</h2>
-        <form >
-        
-         {{ comment_form }}
-         
-            <button>ssss</button>
 
-
-        </form>
-    </section>    
-
-
-</div>
 
 {% endblock%}

@@ -1,5 +1,6 @@
 body {
-  background-color: #7c7a7a;
+  background: rgb(96, 13, 13);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 1.945) 100%);
 }
 html {
   scroll-behavior: smooth;
@@ -12,27 +13,30 @@ html {
 }
 
 #summary {
+  display: block;
   margin: 8rem auto 3rem auto;
   padding: 2rem;
-  width: 90%;
+  width: 100%;
   max-width: 90rem;
   border-radius: 16px;
-  background-color: #68180acc;
+  background-color: #664cf529;
   position: relative;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   height: 22rem;
+  position:relative;
 }
 
 #summary h2 {
   color: white;
-  font-size: 4.5rem;
+  width:80%;
+  font-size: 4rem;
   margin-bottom: 0.25rem;
 }
 
 #summary article {
-  position: absolute;
-  top: 2rem;
-  right: 3rem;
+  position: relative;
+  top: -100%;
+  right: 1%;
   padding: 1rem 2rem;
   border-radius: 12px;
   text-align: right;
@@ -53,11 +57,11 @@ html {
 }
 
 #summary a {
-  color: white;
+  color: #1afff9;
   text-decoration: none;
 }
 
-#summary time {
+ time {
   font-weight: bold;
 }
 
@@ -66,13 +70,15 @@ html {
 }
 
 #read-later button {
-  background-color: transparent;
+  background-color: #5b3b3b;
   border: 1px solid white;
   padding: 0.5rem 2rem;
   font: inherit;
   color: white;
   cursor: pointer;
 }
+
+
 
 #read-later button:hover,
 #read-later button:active {
@@ -84,17 +90,23 @@ main {
   width: 90%;
   max-width: 90rem;
   margin: 3rem auto;
-  background-color: rgba(209, 209, 209, 0.678);
+  background: rgb(96, 13, 13);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 7%, rgba(31, 4, 4, 0.849) 73%, rgba(0, 0, 0, 0.945) 95%);
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
+#postext p{
+  color: #fffcfc;
+  font-size:1.5vw
+}
 .tag {
   background-color: white;
   color: #390281;
   padding: 0.5rem 1rem;
   border-radius: 8px;
+  
 }
 
 #comment-form {
@@ -266,3 +278,162 @@ main {
 #comments h2 {
   color: #464646;
 }
+
+
+@media (max-width:1400px){
+
+   #summary h2 {
+    color: rgb(255, 0, 0);
+    font-size:2.5rem;
+    padding-top:8rem;
+    text-align:center;
+    width:100%
+    
+  }
+  
+  #summary article  {
+  font-size:0.7rem;
+    position:absolute;
+  top: -1%;
+  right: 40%;
+  transform: translate(20%, 0%);
+
+}
+   #summary article img {
+    width:10rem;
+    height:9rem;
+     
+
+}
+ 
+   #read-later button {
+    position:absolute;
+    top: 80%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+  #postext p{
+  color: #fffcfc;
+  font-size:1rem;
+}
+
+  .tag {
+  position:absolute;
+  top: 65%;
+    right: 50%;
+  transform: translate(50%, 50%);
+  
+}
+
+} 
+
+@media (max-width:800px){
+  
+   #summary article  {
+    font-size:0.6rem;
+    position:absolute;
+    top: -20%;
+    right: 50%;
+    padding:0rem;
+    transform: translate(50%, 50%);
+}
+  
+   #summary article img {
+    width:7rem;
+    height:7rem;
+}
+  
+  #summary h2 {
+    color: rgb(32 255 0);
+    font-size:1.4rem;
+  }
+  
+  #read-later button {
+    position:absolute;
+    top: 70%;
+    right: 50%;
+    
+}
+  
+  .tag {
+    position:absolute;
+    top: 55%;
+    right: 50%;
+}
+  
+} 
+
+
+@media (max-width: 455px) {
+  
+   #summary article  {
+    font-size:0.5rem;
+    top: -15%;
+    right: 55%;
+    
+}
+   #summary article img {
+    width:6rem;
+    height:6rem;
+
+}
+  #summary h2 {
+    color: rgb(151 3 231);
+    font-size:1rem;
+    width:100%
+  
+    
+  }
+    #read-later button {
+    top: 70%;
+    right: 50%;
+      font-size:12px;
+    
+}
+  
+  .tag {
+    top: 55%;
+    right: 50%;
+    font-size:12px;
+}
+  
+}
+
+@media (max-width: 320px) {
+     #summary article  {
+    font-size:0.5rem;
+    top: -15%;
+    right: 55%;
+    
+}
+   #summary article img {
+    width:6rem;
+    height:6rem;
+
+}
+  #summary h2 {
+    color: rgb(0 48 250);
+    font-size:0.9rem;
+    width:100%
+  
+    
+  }
+    #read-later button {
+    top: 70%;
+    right: 50%;
+      font-size:10px;
+    
+}
+  
+  .tag {
+    top: 60%;
+    right: 50%;
+    font-size:10px;
+}
+  
+  
+}
+
+
+

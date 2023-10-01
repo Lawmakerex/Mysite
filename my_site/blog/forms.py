@@ -20,12 +20,11 @@ class InformationForm(forms.Form):
     
     
 
-class DetailForm(forms.ModelForm):
-    class Meta:
-        model = Detail 
-        exclude = ["post"]
-        labels = {
-            "user_name": "שם",
-            "user_email": "אימייל",
-            "text": "תוכן הודעה"
-        }
+
+class DetailForm(forms.Form):
+    
+   שם = forms.CharField(max_length=255)
+   טלפון = forms.CharField(max_length=10)
+   מייל = forms.EmailField()
+   נושא = forms.CharField(max_length=255)
+   תוכן = forms.CharField(widget=forms.Textarea,required=True)

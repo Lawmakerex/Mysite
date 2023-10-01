@@ -123,14 +123,17 @@ Fitness Or-Yehuda
     <h3> <i>תתמודדו עם הטובים ביותר ותזכו בפרסים גדולים</h3></i>
     <hr style="width: 5%; ">
     <br>
-
-    <ul>
-        {% for post in posts %}
+    <div id="latest-posts-container">
+        <ul>
+       {% for post in posts %}
             {% include "blog/includes/post.html"%}
         {% endfor %}
 
-    </ul>
-    <button class="buttonChall buttonChall1">להירשם לאתגר</button>
+
+
+        </ul>
+        <button class="buttonChall buttonChall1">להירשם לאתגר</button>
+    </div>
     <h3> השלימו את האתגרים השבועיים </h2>
     <h3> ותזכו בחודש חינם </h2>
     <h1> מתנה! </h2>
@@ -139,12 +142,12 @@ Fitness Or-Yehuda
 
 <section id="gallery">
     <h2 style= "color: white;"> הגלריה שלנו</h2>
-      <a href="{% url "gallery-page"%}"><button class="button-64" role="button"><span> Our Gallery</span></button><br></a>
+      <a href="{% url "gallery-page"%}"><button class="button-64" role="button"><span> לגלריה</span></button><br></a>
     <div id="gallery-container">
    
 
     <ul>
-        <img src="{% static "blog/images/gym.jpeg" %}" alt="Law author of Blog">
+        <img src="{% static "blog/images/2.jpeg" %}" alt="Law author of Blog">
         <img src="{% static "blog/images/rrr.jpg" %}" alt="Law author of Blog 2">
         <img src="{% static "blog/images/boxing.jpg" %}" alt="Law author of Blog 3">
 
@@ -166,117 +169,94 @@ Fitness Or-Yehuda
 
         <div class="slideshow-container">
 
-                <div class="mySlides fade">
-                    <img src="{% static "blog/images/dor.jpeg" %}">
-                    <div class="text">  Dor </div>
-                </div>
+            <div class="mySlides fade">
+                <img src="{% static "blog/images/dor.jpeg" %}">
+                <div class="text">  Dor </div>
+            </div>
 
-                <div class="mySlides fade">
-                    <img src="{% static "blog/images/idan.jpeg" %}">
-                        <div class="text"> Yarin </div>
-                </div>
+            <div class="mySlides fade">
+                <img src="{% static "blog/images/idan.jpeg" %}">
+                    <div class="text"> Idan </div>
+            </div>
 
-                <div class="mySlides fade">
-                    <img src="{% static "blog/images/trainer.jpg" %}">
-                        <div class="text"> Michael </div>
-                </div>
-                <div style="text-align:center">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
+            <div class="mySlides fade">
+                <img src="{% static "blog/images/trainer.jpg" %}">
+                    <div class="text"> Alon </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
 
         </div>
 
-            <div class="slideshow-container2">
+        <div class="slideshow-container2">
 
-                <div class="mySlides2 fade2">
-                    <img src="{% static "blog/images/idan.jpeg" %}">
-                    <div class="text2"> Yarin </div>
-                </div>
-
-                <div class="mySlides2 fade2">
-                    <img src="{% static "blog/images/mik.jpeg" %}">
-                        <div class="text2"> Michael </div>
-                </div>
-
-                <div class="mySlides2 fade2">
-                    <img src="{% static "blog/images/dor.jpeg" %}">
-                        <div class="text2"> Dor </div>
-                </div>
-                <div style="text-align:center">
-                    <span class="dot2"></span>
-                    <span class="dot2"></span>
-                    <span class="dot2"></span>
-                </div>
+            <div class="mySlides2 fade2">
+                <img src="{% static "blog/images/idan.jpeg" %}">
+                <div class="text2"> Idan </div>
             </div>
 
-                <div class="slideshow-container3">
+            <div class="mySlides2 fade2">
+                <img src="{% static "blog/images/mik.jpeg" %}">
+                    <div class="text2"> Michael </div>
+            </div>
 
-                    <div class="mySlides3 fade3">
-                        <img src="{% static "blog/images/trainer.jpg" %}">
-                        <div class="text3"> Michael </div>
-                    </div>
+            <div class="mySlides2 fade2">
+                <img src="{% static "blog/images/dor.jpeg" %}">
+                    <div class="text2"> Dor </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot2"></span>
+                <span class="dot2"></span>
+                <span class="dot2"></span>
+            </div>
+        </div>
 
-                    <div class="mySlides3 fade3">
-                        <img src="{% static "blog/images/dor.jpeg" %}">
-                            <div class="text3"> Dor </div>
-                    </div>
+        <div class="slideshow-container3">
 
-                    <div class="mySlides3 fade3">
-                        <img src="{% static "blog/images/Yarin.jpeg" %}">
-                            <div class="text3"> Yarin </div>
-                    </div>
-                    <div style="text-align:center">
-                        <span class="dot3"></span>
-                        <span class="dot3"></span>
-                        <span class="dot3"></span>
-                    </div>
+                <div class="mySlides3 fade3">
+                    <img src="{% static "blog/images/trainer.jpg" %}">
+                    <div class="text3"> Alon </div>
                 </div>
 
+                <div class="mySlides3 fade3">
+                    <img src="{% static "blog/images/dor.jpeg" %}">
+                        <div class="text3"> Dor </div>
+                </div>
 
+                <div class="mySlides3 fade3">
+                    <img src="{% static "blog/images/Yarin.jpeg" %}">
+                        <div class="text3"> Yarin </div>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot3"></span>
+                    <span class="dot3"></span>
+                    <span class="dot3"></span>
+                </div>
+        </div>
+
+        <a href="{% url "indexview-page"%}"><button class="buttonChall buttonChall1">  לאימון אישי  </button></a>
 
     </div>
-
-    <button class="buttonChall buttonChall1">להירשם לאימון</button>
+  
+   
 
 </section>
 
 
 
 <section id="info" style= "background-image: url('{%static 'blog/images/yas.jpg'%}'); color: white;">
-    <h2> השארת פרטים </h2>
-    <form>
+    <div id="info-container">
+        <h2> השארת פרטים </h2>
+
         <h1>
             את הצעד הראשון להצטרף למשפחת פיטנס אור יהודה כבר
             עשיתם 🙂 השאירו פרטים ותנו לנו לדאוג לשאר</h1>
-
-        <p>
-            <label for="Username">שם:</label>
-            <input id="Username" name="Username" type="text">
-
-
-        <p>
-            <label>טלפון: <input type="password" /></label>
-        </p>
-        <p>
-            <label>נושא: <input type="text" /></label>
-
-        <p>
-            <label>אי מייל: <input type="password" /></label>
-        </p>
-        <label>הודע:
-        <textarea name="welcomeMessage" rows="3"
-        cols="40">
-           
-            </textarea>
-
-        <p>
-            <button type="submit">submit</button>
-        </p>
-
-    </form>
-    </ul>
+          
+            <a href="{% url "indexview-page"%}"><button class="buttonChall buttonChall1">להשארת פרטים</button></a>
+    </div>
 </section>
 
 <section id="membership">

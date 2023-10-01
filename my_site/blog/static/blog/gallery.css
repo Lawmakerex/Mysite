@@ -63,7 +63,7 @@
   .container {
     position: relative;
     min-height: 100vh;
-    background: white;
+    background: rgb(99, 99, 99);
   }
 
   .container .image-container {

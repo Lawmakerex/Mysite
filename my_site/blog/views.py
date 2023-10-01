@@ -1,17 +1,21 @@
+from django.core.mail import send_mail
 from typing import Any, Dict
+from django.core.mail import EmailMessage, get_connection
 from django.db.models.query import QuerySet
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render,redirect, get_object_or_404
 from django.views.generic import ListView, DetailView
 from django.views import View
-
+from django.conf import settings
+from django.template.loader import render_to_string
 
 from .models import Post
 from .forms import CommentForm
-from .forms import InformationForm
+from django.shortcuts import render,redirect
 from .forms import DetailForm
 from django import forms
+
 
 
 # Create your views here.
@@ -25,6 +29,7 @@ class StartingPageView(ListView):
         queryset =  super().get_queryset()
         data = queryset[:3]
         return data
+
 
 def GalleryPageView(request):
     return render(request, "blog/gallery.html")
@@ -121,19 +126,19 @@ class ReadLaterView(View):
 
 
 
-    def information(request):
-        if request.method == 'POST':
-            form = InformaionForm(request.POST)
+    # def information(request):
+    #     if request.method == 'POST':
+    #         form = InformaionForm(request.POST)
             
-            if form.is_valid():
-             print(froms.cleaned_data)
-             return HttpResponseRedirect("/thank-you")
-        else:
-            forms = InformationForm()
+    #         if form.is_valid():
+    #          print(froms.cleaned_data)
+    #          return HttpResponseRedirect("/thank-you")
+    #     else:
+    #         forms = InformationForm()
             
-        return render(request, "blog/index.html", {
-          "forms": form 
-        })
+    #     return render(request, "blog/index.html", {
+    #       "forms": form 
+    #     })
   
      
 
@@ -146,4 +151,54 @@ class DetailFormView(DetailView):
         context["post_tags"] = self.object.tags.all(())
         context["detail_form"] = DetailForm()
         return context
-    
+
+
+def indexview(request):
+    if request.method == 'POST':
+        
+        form = DetailForm(request.POST)
+        
+        if form.is_valid():
+            
+            name = form.cleaned_data['שם']
+            number = form.cleaned_data['טלפון']
+            email = form.cleaned_data['מייל']
+            subject = form.cleaned_data['נושא']
+            content = form.cleaned_data['תוכן']
+            
+            html = render_to_string('blog/emails/contactform.html',{
+                
+                'name': name,
+                'number': number,
+                'email': email,
+                'subject': subject,
+                'content': content
+                
+                
+            })
+            
+            send_mail(
+            "Subject here",
+            "Here is the message.",
+            "fitness.oryehuda@gmail.com",
+            ["moranfriedman92@gmail.com"],
+            html_message=html,
+            fail_silently=False,)
+            
+            return redirect('indexview-page')
+            
+        else: 
+            
+            print('form not valid')
+            return redirect('indexview-page')
+    else:
+        
+        form = DetailForm()
+            
+            
+    return render(request,'blog/index2.html',{
+        
+        'form': form
+        
+    })
+   

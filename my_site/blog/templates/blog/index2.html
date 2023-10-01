@@ -20,19 +20,21 @@ Fitness Or-Yehuda
 
    
 
-    <section id="info">
+    <section id="information" style= "background-image: url('{%static 'blog/images/Fitness.png'%}'); color: white;">
         <h2> השארת פרטים </h2>
+        <div id="information-container">
         <form method="post">
             {% csrf_token %}
 
             {{form.as_p}}
 
-            <button>Submit</button>
+            <button>לשליח</button>
                 
             
      
         </form>
-        </ul>
+        </div>
+        
     </section>
 
     {% endblock%}
