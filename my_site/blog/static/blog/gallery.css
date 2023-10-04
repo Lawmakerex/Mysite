@@ -12,7 +12,7 @@
   background-color: rgb(57 56 56);
   background-blend-mode:multiply;
   min-width: 100%;
-  height: 30rem;
+  height: 30vw;
   margin: 5rem auto auto;
   }
 
@@ -25,34 +25,18 @@
   }
   
   
-  #welcome #TitleContainer{
-    position: relative; 
-    right:30%; 
-    top:35%; 
-    width: 35%; 
-    height:40%; 
-    margin:auto;
  
-  }
   #gallerypagecontainer h1 {
-    font-size: 15rem;
+    font-size: 15vw;
     color: #ffeaea;
     position: relative;
-    left: 120%;
-    bottom: -5rem;
+    left: 120px;
+    bottom: 0pX;
     margin:auto;
     text-shadow: 0 0 10px rgb(0, 0, 0);
   
   }
-  #fit_sub {
-    
-    color: #e7e9e8;
-    position: relative;
-    left:50%;
-    margin:auto;
-    bottom: 4rem;
-  
-  }
+
 
   * {
     margin: 0;

@@ -650,7 +650,6 @@ hr {
 
 @media (max-width: 1500px) {
   #welcome p {
-    color: #eeff00;
     left:120px;
     
   }
@@ -705,7 +704,6 @@ hr {
   }
   #welcome p {
     font-size: 2rem;
-    color: #0af8a9;
     left:120px;
     bottom: 6rem;
     width:100%;
@@ -724,7 +722,7 @@ hr {
   }
    
   #welcome #TitleContainer{
-    left:10%;
+    left:10px;
     top:35%;
     width: 45%; 
     padding:3px;
@@ -796,8 +794,8 @@ hr {
 
   @media (max-width: 800px) {
     #welcome p {
-      color: #ecff00;
-      font-size:1.6rem;
+      font-size:1.3rem;
+      left:170px;
     }
     
      #fit_Title {
@@ -813,15 +811,14 @@ hr {
   }
    
     #welcome #TitleContainer{
-      left:10%;
-      top:35%;
-      width: 45%; 
+      left:-120px;
+      top:235px;
       padding:3px;
   }
    
 
   
-  }
+}
   
 
 
@@ -836,27 +833,27 @@ hr {
   }
   
   #welcome #TitleContainer{
-    right:0%; 
-    top:35%; 
-    width: 100%; 
+    left:-150px; 
+    top:130px; 
+    width: 60%; 
   }
-  #fit_Title {
-    font-size: 3rem;
-    left:120px;
-    bottom: 0rem;
+
+   #welcome p {
+      font-size:1.1rem;
+      left:160px;
+     top:-77px;
+    }
+    
+     #fit_Title {
+      font-size:4rem;
+      left:200px;
   }
-  #fit_sub {
-    left:110px;
-    bottom: 1rem;
-    font-size: 2rem;
-  
-  }
-  
-  #welcome p {
-    font-size: 1.4rem;
-    bottom: 40%;
-    color: #26ce05;
-    left:2rem;
+    
+    #fit_sub {
+      font-size: 2rem;
+      left:230px;
+      top:-54px;
+    
   }
 
   #Whatwedo #container{
@@ -1035,25 +1032,27 @@ hr {
   }
   
   #welcome #TitleContainer{
-    right:0%; 
-    top:35%; 
-    width: 100%; 
+    left:-20px; 
+    top:130px; 
+    width: 70%; 
   }
   #fit_Title {
-    font-size: 3rem;
+    font-size: 2.7rem;
     left:70px;
+    padding-bottom:10px;
   }
   #fit_sub {
-    left:60px;
-    bottom: 1rem;
+    left:100px;
+    top: -50px;
+    padding-bottom:10px;
+    font-size: 1.2rem;
   
   }
   
   #welcome p {
-    font-size: 1.4rem;
-    bottom: 50px;
-    color: #2400f3;
-    left:10px;
+    font-size: 0.8rem;
+    
+    left:33px;
   }
 
   #Whatwedo #container{
@@ -1089,10 +1088,8 @@ hr {
   
   #latest-posts .post #desc {
     font-size:15px;
- 
     width:80%;
     }
-
 
 
   
@@ -1209,6 +1206,7 @@ hr {
       color: #fff8f8;
       left: 0;
       position: relative;
+     
        
     }
 

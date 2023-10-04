@@ -93,6 +93,63 @@ h3 {
 
 @media (max-width:800px){
 
+   body {
+    min-width: auto;
+    
+  }
+
+  
+  #navlinks {
+   font-size: 1.2rem;
+   color:#decae3;
+   position: relative;
+   top: 35%;
+   left:4%;
+  }
+  
+    
+  #navlinkstext {
+  display:none;
+  }
+  
+  a.icon { position: relative;
+    bottom: 27px;
+    right:-33%;
+   
+    }
+
+  #main-navigation {
+    min-width: 5rem;
+    padding: 0 5%;
+    
+  }
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: -17%;
+    top: 15%;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  .topnav.responsive #navlinkstext {
+    display:grid;
+    position: relative;
+    top: 114px;
+    right: -9px;
+    background: rgb(20 15 15 / 96%);
+    border: 1px solid #2a2a2a;
+    }
+
 
 } 
 
@@ -116,56 +173,31 @@ h3 {
    position: relative;
    top: 30%;
   }
-  
-    
-  #navlinkstext {
-  display:none;
-  }
-  
-  a.icon { position: relative;
-    bottom: 27px;
-    right:-33%;
+
+    a.icon { position: relative;
+    bottom: 25px;
+    right:-25%;
    
     }
-
-  #main-navigation {
-    min-width: 5rem;
-    padding: 0 5%;
-    
-  }
-
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav.responsive {position: relative;}
+    .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
-    right: -20%;
-    top: 10%;
+    right: -15%;
+    top: 11%;
   }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: right;
-  }
-  .topnav.responsive #navlinkstext {
+    .topnav.responsive #navlinkstext {
     display:grid;
     position: relative;
-    top: 106px;
+    top: 105px;
     right: -9px;
     background: rgb(20 15 15 / 96%);
     border: 1px solid #2a2a2a;
     }
+ 
 }
 
 @media (max-width: 320px) {
-  body {
-    min-width: auto;
-    
-  }
+ 
 
   #main-navigation img {
     width: 6rem;
@@ -181,50 +213,7 @@ h3 {
    top: 30%;
   }
   
-    
-  #navlinkstext {
-  display:none;
-  }
-  
-  a.icon { position: relative;
-    bottom: 27px;
-    right:-33%;
-   
-    }
-
-  #main-navigation {
-    min-width: 5rem;
-    padding: 0 5%;
-    
-  }
-
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: -20%;
-    top: 10%;
-  }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: right;
-  }
-  .topnav.responsive #navlinkstext {
-    display:grid;
-    position: relative;
-    top: 106px;
-    right: -9px;
-    background: rgb(20 15 15 / 96%);
-    border: 1px solid #2a2a2a;
-    }
 
 }
-
 
 
