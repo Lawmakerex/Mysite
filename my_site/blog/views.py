@@ -10,7 +10,7 @@ from django.views import View
 from django.conf import settings
 from django.template.loader import render_to_string
 
-from .models import Post
+from .models import Post, Image
 from .forms import CommentForm
 from django.shortcuts import render,redirect
 from .forms import DetailForm
@@ -32,7 +32,8 @@ class StartingPageView(ListView):
 
 
 def GalleryPageView(request):
-    return render(request, "blog/gallery.html")
+    pics = Image.objects.all()
+    return render(request, "blog/gallery.html",{"pics":pics})
 
 
    

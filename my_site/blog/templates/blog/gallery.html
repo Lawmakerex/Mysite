@@ -18,18 +18,10 @@ Fitness Or-Yehuda
     <div class="container">
 
         <section id="welcome" style= "background-image: url('{%static 'blog/images/Fitness.png'%}');">
-            
             <header>
-                
                 <div id="gallerypagecontainer">
-                
                     <h1>גלריה</h1>
-                
                 </div>
-                
-
-                
-            
             </header>
         
 
@@ -39,7 +31,10 @@ Fitness Or-Yehuda
         
         <div class="container">
             <div class="image-container">
-              <div class="image"><img src="{% static "blog/images/1.jpeg" %}" alt="" /></div>
+              {% for x in pics %}
+              <div class="image"><img src="{{x.image.url}}" alt="{{x.caption}}" /></div>
+              {% endfor%}
+
               <div class="image"><img src="{% static "blog/images/2.jpeg" %}" alt="" /></div>
               <div class="image"><img src="{% static "blog/images/3.jpeg" %}" alt="" /></div>
               <div class="image"><img src="{% static "blog/images/4.jpeg" %}" alt="" /></div>
@@ -58,15 +53,9 @@ Fitness Or-Yehuda
               <div class="image"><img src="{% static "blog/images/17.jpeg" %}" alt="" /></div>
               <div class="image"><img src="{% static "blog/images/18.jpeg" %}" alt="" /></div>
               <div class="image"><img src="{% static "blog/images/19.jpeg" %}" alt="" /></div>
-              <div class="image"><img src="{% static "blog/images/20.jpeg" %}" alt="" /></div>
+           
               <div class="image"><img src="{% static "blog/images/21.jpeg" %}" alt="" /></div>
-              <div class="image"><img src="{% static "blog/images/1.jpeg" %}" alt="" /></div>
-              <div class="image"><img src="{% static "blog/images/2.jpeg" %}" alt="" /></div>
-              <div class="image"><img src="{% static "blog/images/3.jpeg" %}" alt="" /></div>
-              <div class="image"><img src="{% static "blog/images/4.jpeg" %}" alt="" /></div>
-              <div class="image"><img src="{% static "blog/images/5.jpeg" %}" alt="" /></div>
-              <div class="image"><img src="{% static "blog/images/6.jpeg" %}" alt="" /></div>
-  
+
 
             </div>
       
